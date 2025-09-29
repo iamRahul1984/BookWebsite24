@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    overflow-y: auto;
+    background-image: ("images/bookbackgroundimage.jpg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the image */
+    background-repeat: repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the body takes up the full height of the viewport */
+    margin: 0;
+    margin-top: 120px;
+    background-image:url(../images/bookbackgroundimage.jpg);
+    background-color: antiquewhite;
+}
+
+/*.no-results {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+  */
+ 
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e293b;
+    color: white;
+
+
+
+    position: fixed;     /* Fixes the navbar to the top */
+    top: 0;              /* Positions it at the top of the viewport */
+    left: 0;             /* Aligns it to the left of the viewport */
+    width: 100%;         /* Makes sure it spans the entire width */
+    padding: 15px 0;     /* Adds padding for spacing */
+    z-index: 1000;       /* Ensures the navbar stays on top of other content */
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .nav-options {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-options a,
+  .nav-options select {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+   
+  
+
+  /* Book Section */
+  .book-section {
+    margin: 20px;
+
+  }
+
+  .book-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .book-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  
+  
+  .book-card {
+    min-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 350px;
+    
+  }
+
+  .book-heading {
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: rgb(102, 109, 83);
+    border-radius: 10px;
+    text-shadow: 20cm;
+    color: rgb(255, 102, 0);
+    padding:20px;
+    padding:auto;
+  
+  }
+
+  /*this is for text under image of book */
+  .book-container a {
+    text-decoration: none;
+    color:rgb(70, 49, 49);
+    background-color: aliceblue;
+}
+  /* Footer */
+  footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+

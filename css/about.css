@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    height: 100vh;
+    
+    background-image: url(../images/bookbackgroundimage.jpg);
+    font-family: Arial, sans-serif;
+    color: rgb(50, 20, 220);
+    
+}
+
+.info {
+    font-size: 40px;
+    width:90%;
+    padding-top:100px;
+    margin-top:80px;
+    margin-left:100px;
+
+}
+
+.Goal{
+
+    font-size: 40px;
+    width:90%;
+    margin-top:60px;
+    margin-left:100px;
+}
+
+.stud{
+
+    font-size: 40px;
+    width:90%;
+    padding-top:1px;
+    margin-top:50px;
+    margin-left:100px;
+}

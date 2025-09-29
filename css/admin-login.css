@@ -1,0 +1,157 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/nav\ image.png');
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*kkfoefkfkoiyfhf*/
+    padding: 10px 10px;
+    background-color: #1e293b;
+    color: white;
+    width: 90%;
+    position: fixed;
+    top: 0; /* Position it at the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps it on top of other content */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .nav-options {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-options a,
+  .nav-options select {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+   
+
+/* Login Form */
+.login-page {
+    background-color: rgba(228, 129, 48, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.logo img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+.login-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    justify-content: center;
+
+}
+
+button:hover {
+    background-color: #334155;
+   
+}
+
+button:hover {
+  background: #218838;
+}
+.register-link {
+  margin-top: 10px;
+  text-align: center;
+}
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
+.forgot-password {
+  margin-top: 10px;
+  text-align: center;
+}
+.forgot-password a {
+  color: #dc3545;
+  text-decoration: none;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
