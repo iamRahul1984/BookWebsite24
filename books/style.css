@@ -1,0 +1,396 @@
+
+/*
+
+  body {
+    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    margin-top: 30px; /* or adjust based on your navbar height 
+    padding: 5px;
+
+   
+    background-color: rgb(142, 125, 151);
+    background-image: url(../../images/seamless-pattern-with-outline-decorative-books-vector-illustration_114122-2698.avif);
+}
+
+.container {
+    margin-top: 60px; /* or adjust based on your navbar height 
+    padding: 200px;
+    
+
+}
+
+
+/*
+.left-section {
+    width: 25%;
+    padding: 20px;
+    margin-left: -30px;
+    margin-right:10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-section img{
+     height: 80%;
+     margin-top:20px;
+}
+
+.right-section .book-name {
+    background-color:wheat;
+   
+}
+.book-name h1{
+    font-size: 50px; 
+    margin-left: 20px;
+}
+.book-name p{
+    font-size: 34px;
+    margin-left: 20px;
+}
+
+.book-info p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.book-image {
+    max-width: 150%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.right-section {
+    width: 70%;
+    padding: 200px;
+    overflow-y: auto;
+}
+
+.right-section div {
+    margin-bottom: 20px;
+    margin-left: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.author-info img{
+    height: 250px;
+    float:left;
+    margin-left: 10px;
+    width:250px ;
+
+}
+
+
+.buy-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.buy-link img{
+    height:50px
+}
+
+.buy-link a:hover {
+    text-decoration: underline;
+}
+
+  
+  .review-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .stars span {
+    color: #ccc;
+    transition: color 0.2s;
+  }
+  
+  .stars span.hover,
+  .stars span.selected {
+    color: gold;
+  }
+  
+  button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #28a745;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Main container takes full height */
+.container {
+  padding-top: 100px;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Left section (non-scrollable) */
+.left-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    height:80vh;
+}
+
+.book-image {
+    max-width: 200%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Right section (scrollable content) */
+.right-section {
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Text styling */
+.book-name h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.book-name p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.book-info, .book-summary, .buy-link, .author-info {
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.book-info h1,
+.book-summary h1,
+.buy-link h1,
+.author-info h1 {
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.book-info p,
+.book-summary article,
+.author-info article {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.buy-link img {
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left:30px;
+    margin-right: 20px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.buy-link a:hover img {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.author-info img {
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.review-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.stars span {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.stars span.hover,
+.stars span.selected {
+  color: gold;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #28a745;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* style for review*/
+.review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 500px;
+  padding: 1rem;
+  padding-left: -100px;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.review-card .rating {
+  font-weight: bold;
+  color: #ffaa00;
+}c
+
+.review-card p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+.review-card small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.review-card button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.review-card button:hover {
+  background-color: #0056b3;
+}
+
